@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <style>
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      width: 1200px;
+      height: 600px;
+    }
+    .centered {
+  position: absolute;
+  font-size: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* .......................................... */
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  height: 100px;
+  width: 200px;
+  padding: 5px;
+}
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%; 
+  padding: 5px;
+} 
+/* .......................................... */
+
+table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    td {
+      padding: 20px;
+    }
+    .round-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
+    }
+
+/* ....................................... */
+    .video-container {
+      width: 70%; /* Adjust the width as needed */
+    }
+    video {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: auto; /* Center the video horizontally */
+      border-radius: 8px; /* Optional: Add rounded corners to the video */
+    }
+    /* ....................................... */
+   
+    .row {
+     display: flex;
+    }
+    .column {
+    flex: 33.33%;
+    padding: 5px;
+    }
+    /* ....................................... */
+
+    
+  </style>
+</head>
+<body>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="c:\Users\User\Desktop\JSpiders\FrontEnd\Image\Kitchen1.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="c:\Users\User\Desktop\JSpiders\FrontEnd\Image\kitchen2.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="c:\Users\User\Desktop\JSpiders\FrontEnd\Image\Kitchen3.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="c:\Users\User\Desktop\JSpiders\FrontEnd\Image\Kitchen4.jpg" alt="">
+      </div>
+      <div class="centered"><u>Design Your Kitchen</u></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+
+<br><br><br><br><br><br>
+<!-- ..........................................  -->
+<p style="text-align: center; font-size: 30px; font-family: Georgia, 'Times New Roman', Times, serif;"><b><u>Design Your Living</u></b></p>
+<div class="row" style="background-color: rgb(61, 87, 78);">
+    <div class="column">
+      <img src="c:\Users\User\Desktop\JSpiders\FrontEnd\Image\Living1.jpg" alt="" width="50px" height="60px" >
+    </div>
+    <div class="column">
+      <img src="c:\Users\User\Desktop\JSpiders\FrontEnd\Image\Living2.jpg" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="c:\Users\User\Desktop\JSpiders\FrontEnd\Image\Living3.jpg" alt="Mountains" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="c:\Users\User\Desktop\JSpiders\FrontEnd\Image\Living4.jpg" alt="Mountains" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="c:\Users\User\Desktop\JSpiders\FrontEnd\Image\Living5.jpg" alt="Mountains" style="width:100%">
+      </div>
+  </div>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!-- ..........................................  -->
+  <h1 style="text-align: center; font-family: 'Times New Roman', Times, serif;"><b><u>We work to an extremely high standard of customer satisfaction</u></b></h1>
+
+  <br><br>
+
+  <table>
+    <tr style="background-color: rgb(201, 224, 146);">
+      <td><img class="round-image" src="c:\Users\User\Desktop\JSpiders\FrontEnd\Image\Logo1.jpg" alt="Image 1"></td>
+      <td><img class="round-image" src="c:\Users\User\Desktop\JSpiders\FrontEnd\Image\Logo2.png" alt="Image 2"></td>
+      <td><img class="round-image" src="c:\Users\User\Desktop\JSpiders\FrontEnd\Image\Logo3.jfif" alt="Image 3"></td>
+      <td><img class="round-image" src="c:\Users\User\Desktop\JSpiders\FrontEnd\Image\Logo4.png" alt="Image 4"></td>
+    </tr>
+    <tr>
+      <td style="font-size: 20px;background-color: rgb(226, 240, 226); font-family: 'Times New Roman', Times, serif;"><b>Full Service</b></td>
+      <td style="font-size: 20px;background-color: rgb(49, 59, 57); font-family: 'Times New Roman', Times, serif;"><b>Deliver Value</b></td>
+      <td style="font-size: 20px;background-color: rgb(226, 240, 226); font-family: 'Times New Roman', Times, serif;"><b>Partners</b></td>
+      <td style="font-size: 20px;background-color: rgb(49, 59, 57); font-family: 'Times New Roman', Times, serif;"><b>Integrity</b></td>
+    </tr>
+    <tr>
+      <td style="font-size: 15px; background-color:rgb(49, 59, 57);">Not sure where to start? Let us help. We can handle all aspects of your kitchen refresh, from removing the old countertops..</td>
+      <td style="font-size: 15px; background-color:rgb(226, 240, 226);">Value means many things to different people. We pledge to always provide optimal value for each and every client.</td>
+      <td style="font-size: 15px; background-color:rgb(49, 59, 57);">Throughout all aspects of our business, we view our stakeholders as partners in our ultimate mission to make beautiful..</td>
+      <td style="font-size: 15px; background-color:rgb(226, 240, 226);">Relationships drive business forward, and our integrity forms the bedrock of our relationships. Our coworkers, dealers..</td>
+    </tr>
+  </table>
+
+  <br><br><br><br><br>
+<!-- ..........................................  -->
+  <div class="video-container">
+    <video controls>
+      <source src="e:\Naveen\GOA\VIDEO\FHD0453.MOV" type="video/mp4">
+    </video>
+  </div>
+
+  <br><br><br><br><br>
+<!-- ..........................................  -->
+  
+<h1 style="text-align: center;"><u><b>OUR WIDE VARIETY OF COURSES</b></u></h1>
+<div class="row">
+  <div class="column">
+    <img src="c:\Users\User\Desktop\JSpiders\FrontEnd\Image\1.png" alt="Snow" style="width:200px;height:200px;">
+    <p style="text-align: center;"><b>ROBOTICES PROCESS AUTOMATION </b></p>
+  </div>
+  <div class="column">
+    <img src="c:\Users\User\Desktop\JSpiders\FrontEnd\Image\2.png" alt="Forest" style="width:200px;height:200px;">
+    <p style="text-align: center;"><b>JAVA FULLSTACK DEVELOPER </b></p>
+  </div>
+  <div class="column">
+    <img src="c:\Users\User\Desktop\JSpiders\FrontEnd\Image\3.png" alt="Mountains" style="width:200px;height:200px;">
+    <p style="text-align: center;"><b>AWS </b></p>
+  </div>
+  <div class="column">
+    <img src="c:\Users\User\Desktop\JSpiders\FrontEnd\Image\5.png" alt="Snow" style="width:200px;height:200px;">
+    <p style="text-align: center;"><b>REACT JS </b></p>
+  </div>
+  <div class="column">
+    <img src="c:\Users\User\Desktop\JSpiders\FrontEnd\Image\6-1.png" alt="Forest" style="width:200px;height:200px;">
+    <p style="text-align: center;"><b>DATA ANALYST</b></p>
+  </div>
+  <div class="column">
+    <img src="c:\Users\User\Desktop\JSpiders\FrontEnd\Image\7.png" alt="Mountains" style="width:200px;height:200px;">
+    <p style="text-align: center;"><b>SALES FORCE </b></p>
+  </div>
+</div>
+<!-- ..........................................  -->
+<br><br><br><br><br><br><br><br><br>
+
+<h2 style="text-align: center; font-size: 40px;"><b><u>What makes us unique?</u></b></h2>
+<p style="text-align: center; font-size: 20px;">We are out-of-the-box learning platform that wholly prepares you for your career. Whether you want internship guaranteed programs, or just want to pick up a skill, you can get started here</p>
+<br>
+
+<table style="width: 55%;  border-collapse: collapse;">
+  <tr>
+    <td style="padding: 10px; vertical-align: top;">
+      <img class="round-image" src="c:\Users\User\Desktop\JSpiders\FrontEnd\Image\Book.png" alt="Image 1" style="width: 250px; height: 200px; display: block; margin: auto; border-radius:50%;">
+    </td>
+    <td>
+      <p style="text-align: center; background-color: rgb(187, 238, 153);"><b><u>FIND RELEVENT COURSES</u></b><br><br>
+        For all major industries, you want to be a part of, we have the right kinds of courses that exactly fit your needs</p>
+        <hr>
+      </td>
+  </tr>
+
+  <tr>
+    <td>
+      <img class="round-image" src="c:\Users\User\Desktop\JSpiders\FrontEnd\Image\th.jfif" alt="Image 1" style="width: 250px; height: 200px; display: block; margin: auto; border-radius:50%;">
+    </td>
+    <td>
+      <p style="text-align: center; background-color: rgb(187, 238, 153);"><B> <u>EXTRA RESOURCES</u></B><br><br>
+        Right from guaranteed internships to solving interview puzzles and mock interviews, we prepare you altogether</p>
+        <hr>
+      </td>
+  </tr>
+  <tr>
+    <td>
+      <img class="round-image" src="c:\Users\User\Desktop\JSpiders\FrontEnd\Image\laptop.jpg" alt="Image 1" style="width: 250px; height: 200px; display: block; margin: auto; border-radius:50%;">
+    </td>
+    <td>
+      <p style="text-align: center; background-color: rgb(187, 238, 153);"><B><u>MENTORS FROM ALL OVER THE WORLD</u></B><br><br>
+        Get extra face time with your mentors that you can contact directly via community forums or one-on-one sessions.</p>
+        <hr>
+      </td>
+  </tr>
+
+</td>
+
+</table>
+</body>
+</html>
